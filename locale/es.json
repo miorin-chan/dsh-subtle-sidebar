@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Barra lateral discreta",
+    "description": "Contrae la barra lateral izquierda al iniciar e intercambia los atajos predeterminados de ambas barras. El cambio se guarda en los atajos de teclado."
+  }
+}

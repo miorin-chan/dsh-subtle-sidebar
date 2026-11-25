@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Barre latérale discrète",
+    "description": "Replie la barre latérale gauche au démarrage et inverse les raccourcis par défaut des deux barres. Le changement est enregistré dans les raccourcis clavier."
+  }
+}

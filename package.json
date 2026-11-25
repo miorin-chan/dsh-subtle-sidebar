@@ -1,0 +1,74 @@
+{
+  "name": "@miorin/dsh-subtle-sidebar",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Starts with the left sidebar collapsed and swaps the default left and right sidebar shortcuts.",
+  "type": "module",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "sidebar",
+    "shortcuts"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "AGENTS.md",
+    "AGENTS.local.md",
+    "docs/README.md",
+    "README.zh.md"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.5"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-shortcuts",
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "npm run build:tools && node scripts/build.mjs",
+    "build:tools": "tsc -p tsconfig.tools.json",
+    "prepare": "npm run build 1>&2",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "npm run build && npm run test:unit --",
+    "test:unit": "node --test",
+    "check": "npm run build:tools && npm run test:unit && npm run typecheck && node scripts/build.mjs --check && node scripts/sync-types.mjs --check"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.1.0",
+    "@deepseek-ai/dsh-client-shortcuts": "0.2.2-rc.5",
+    "@deepseek-ai/dsh-client-store": "0.2.2-rc.5",
+    "@deepseek-ai/dsh-client-ui-layout": "0.2.2-rc.5",
+    "@deepseek-ai/dsh-client-ui-renderer": "0.2.2-rc.5",
+    "@deepseek-ai/dsh-client-ui-slots": "0.2.2-rc.5",
+    "@types/node": "22.20.5",
+    "@types/react": "18.3.31",
+    "esbuild": "0.28.2",
+    "react": "18.3.1",
+    "react-test-renderer": "18.3.1",
+    "typescript": "5.7.3"
+  }
+}

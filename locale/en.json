@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Subtle sidebar",
+    "description": "Collapses the left sidebar on startup and swaps the two default sidebar shortcuts. The swap is saved in Keyboard shortcuts."
+  }
+}
