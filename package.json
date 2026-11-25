@@ -1,7 +1,6 @@
 {
   "name": "@miorin/dsh-subtle-sidebar",
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
   "description": "Starts with the left sidebar collapsed and swaps the default left and right sidebar shortcuts.",
   "type": "module",
@@ -70,5 +69,17 @@
     "react": "18.3.1",
     "react-test-renderer": "18.3.1",
     "typescript": "5.7.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miorin-chan/dsh-subtle-sidebar.git"
+  },
+  "homepage": "https://github.com/miorin-chan/dsh-subtle-sidebar#readme",
+  "bugs": {
+    "url": "https://github.com/miorin-chan/dsh-subtle-sidebar/issues"
   }
 }
