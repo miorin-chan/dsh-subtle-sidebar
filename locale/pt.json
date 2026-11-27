@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Barra lateral discreta",
-    "description": "Recolhe a barra lateral esquerda ao iniciar e troca os atalhos padrão das duas barras. A alteração é salva nos atalhos de teclado."
+    "description": "Recolhe a barra lateral esquerda ao iniciar."
   }
 }

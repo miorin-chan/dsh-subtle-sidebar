@@ -11,9 +11,6 @@ importers:
       '@deepseek-ai/cordis':
         specifier: 4.1.0
         version: 4.1.0
-      '@deepseek-ai/dsh-client-shortcuts':
-        specifier: 0.2.2-rc.5
-        version: 0.2.2-rc.5(@deepseek-ai/cordis@4.1.0)
       '@deepseek-ai/dsh-client-store':
         specifier: 0.2.2-rc.5
         version: 0.2.2-rc.5(@deepseek-ai/cordis@4.1.0)
@@ -62,11 +59,6 @@ packages:
   '@deepseek-ai/cosmokit@1.9.0':
     resolution: {integrity: sha512-5O1S53mZiJyZYcvxxD0Qv1EY7qFPSxbGyD8CbVK6gw7W9FvcXZj2YIX1ZkOqyQQ3Xt2rFkZDHJv0+V3Zmmp8CA==}
 
-  '@deepseek-ai/dsh-client-shortcuts@0.2.2-rc.5':
-    resolution: {integrity: sha512-Ttno0XHbyUL1DY4C1y0KHLa6lXzNTj3NjxyQVn0FGa0cPQdldzqoaSHFZ2xRUHh/+oEBVfcxNn6Uf8FFirwm+g==}
-    peerDependencies:
-      '@deepseek-ai/cordis': ~4.1.0
-
   '@deepseek-ai/dsh-client-store@0.2.2-rc.5':
     resolution: {integrity: sha512-MaJ/sqTIenCkvpUo3HkkkOBU60Zhy3DeMd7uCZTFi7bzodDjdfjXWkxZFkL7Zydmz9GJCRKnq+xWQGwsl7cORw==}
     peerDependencies:
@@ -86,19 +78,6 @@ packages:
     resolution: {integrity: sha512-gplorEkuJP+XA6PqyiVwMCSI+pPgXqE20bv9zT590oMm0AU1IBhpgonGPt+xQBmuTaQ/WeLfC8vkDt4/9BgiBA==}
     peerDependencies:
       '@deepseek-ai/cordis': ~4.1.0
-
-  '@deepseek-ai/dsh-util-crypto@0.2.2-rc.5':
-    resolution: {integrity: sha512-5+w9RdJ6puwBVVX7DTwCzdvX9m0f6o/yI8hX6EIzZenmpQwdhhmsxLa8ZFtnLta4ptIMCP2e+XIHhbGZXz9t+Q==}
-    peerDependencies:
-      '@deepseek-ai/cordis': ~4.1.0
-
-  '@deepseek-ai/dsh-util-values@0.2.2-rc.5':
-    resolution: {integrity: sha512-ISgMAgMZ1+d5Iqdd2J7PfUZbGPAwLEWVAl87pmtJFlgkZukbT3GigvN27BB53Tit7fGR1B5zgwgvQA7zOlegmg==}
-    peerDependencies:
-      '@deepseek-ai/cordis': ~4.1.0
-
-  '@deepseek-ai/schemastery@3.19.0':
-    resolution: {integrity: sha512-bDXoYQa7ghAhmdYD5VPlzKxEzJV/aKkz5l4V5h1u06z8GAPN1ROewSjvR9WiXhpa52E9fng8lpH5QdCRIQgnyQ==}
 
   '@esbuild/aix-ppc64@0.28.2':
     resolution: {integrity: sha512-XExcO+dvLKvVtNTibSTBej1NCAbaGhWn9Ww1ZPx80qsahhPFe/8jgWP0IchNe0F3HwkU7n8ejhH8bjonqht8mQ==}
@@ -324,13 +303,6 @@ snapshots:
 
   '@deepseek-ai/cosmokit@1.9.0': {}
 
-  '@deepseek-ai/dsh-client-shortcuts@0.2.2-rc.5(@deepseek-ai/cordis@4.1.0)':
-    dependencies:
-      '@deepseek-ai/cordis': 4.1.0
-      '@deepseek-ai/dsh-util-crypto': 0.2.2-rc.5(@deepseek-ai/cordis@4.1.0)
-      '@deepseek-ai/dsh-util-values': 0.2.2-rc.5(@deepseek-ai/cordis@4.1.0)
-      '@deepseek-ai/schemastery': 3.19.0
-
   '@deepseek-ai/dsh-client-store@0.2.2-rc.5(@deepseek-ai/cordis@4.1.0)':
     dependencies:
       '@deepseek-ai/cordis': 4.1.0
@@ -346,19 +318,6 @@ snapshots:
   '@deepseek-ai/dsh-client-ui-slots@0.2.2-rc.5(@deepseek-ai/cordis@4.1.0)':
     dependencies:
       '@deepseek-ai/cordis': 4.1.0
-
-  '@deepseek-ai/dsh-util-crypto@0.2.2-rc.5(@deepseek-ai/cordis@4.1.0)':
-    dependencies:
-      '@deepseek-ai/cordis': 4.1.0
-
-  '@deepseek-ai/dsh-util-values@0.2.2-rc.5(@deepseek-ai/cordis@4.1.0)':
-    dependencies:
-      '@deepseek-ai/cordis': 4.1.0
-
-  '@deepseek-ai/schemastery@3.19.0':
-    dependencies:
-      '@deepseek-ai/cosmokit': 1.9.0
-      '@standard-schema/spec': 1.1.0
 
   '@esbuild/aix-ppc64@0.28.2':
     optional: true

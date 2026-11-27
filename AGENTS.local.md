@@ -7,8 +7,8 @@ Where the two conflict, this file wins.
 
 ## Scope
 
-This bundle collapses the left sidebar on startup and swaps the default bindings of the two sidebar toggles.
-The [maintenance guide](docs/README.md) records the startup seam, preference ownership, and verification.
+This bundle collapses the left sidebar on startup.
+The [maintenance guide](docs/README.md) records the startup seam and verification.
 
 ## Project documentation
 

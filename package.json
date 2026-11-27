@@ -2,14 +2,13 @@
   "name": "@miorin/dsh-subtle-sidebar",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "Starts with the left sidebar collapsed and swaps the default left and right sidebar shortcuts.",
+  "description": "Starts DeepSeek Harness with the left sidebar collapsed.",
   "type": "module",
   "keywords": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "sidebar",
-    "shortcuts"
+    "sidebar"
   ],
   "exports": {
     ".": "./index.js",
@@ -45,9 +44,7 @@
       "immediately": true,
       "inject": [
         "@deepseek-ai/dsh-client-ui-layout",
-        "@deepseek-ai/dsh-client-ui-slots",
-        "@deepseek-ai/dsh-client-shortcuts",
-        "@deepseek-ai/dsh-client-ui-sidebar-right"
+        "@deepseek-ai/dsh-client-ui-slots"
       ]
     }
   },
@@ -62,16 +59,15 @@
   },
   "devDependencies": {
     "@deepseek-ai/cordis": "4.1.0",
-    "@deepseek-ai/dsh-client-shortcuts": "0.2.2-rc.5",
     "@deepseek-ai/dsh-client-store": "0.2.2-rc.5",
     "@deepseek-ai/dsh-client-ui-layout": "0.2.2-rc.5",
     "@deepseek-ai/dsh-client-ui-renderer": "0.2.2-rc.5",
     "@deepseek-ai/dsh-client-ui-slots": "0.2.2-rc.5",
     "@types/node": "22.20.5",
-    "@types/react": "18.3.31",
     "esbuild": "0.28.2",
     "react": "18.3.1",
     "react-test-renderer": "18.3.1",
+    "@types/react": "18.3.31",
     "typescript": "5.7.3"
   },
   "publishConfig": {
