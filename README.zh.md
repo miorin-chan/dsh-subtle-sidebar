@@ -14,3 +14,11 @@
 同一 profile 请选择一种方式。
 
 [项目文档](docs/README.md)
+
+## 实拍截图
+
+启动后左侧栏收起，只保留一列图标。
+
+![启动后收起的左侧栏与保留的图标条](docs/assets/screenshots/main-light.png)
+
+[深色主题](docs/assets/screenshots/main-dark.png)
